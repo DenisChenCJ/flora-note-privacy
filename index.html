@@ -6,7 +6,7 @@
     <title>FloraNote 隱私權政策</title>
     <style>
         body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.8; 
             color: #333; 
             max-width: 850px; 
@@ -20,7 +20,19 @@
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
-        h1 { color: #a56b28; border-bottom: 3px solid #c09768; padding-bottom: 15px; margin-bottom: 30px; }
+    
+    /* 新增：標頭區塊置中樣式 */
+    .header-section {
+        text-align: center; /* 讓內容物全部置中 */
+        margin-bottom: 40px;
+    }
+
+    .app-logo {
+        width: 100px; /* 您可以調整 Logo 的大小 */
+        height: auto;
+        margin-bottom: 15px;
+    }
+        h1 { color: #a56b28; border-bottom: 3px solid #c09768; padding-bottom: 15px; margin: 0; }
         h2 { color: #3d9a3d; margin-top: 35px; font-size: 1.4em; }
         h3 { color: #63ae63; margin-top: 25px; font-size: 1.1em; }
         p, li { color: #555; }
@@ -49,7 +61,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>FloraNote 隱私權政策</h1>
+        <div class="header-section">
+            <img src="P03-logo01.svg" alt="FloraNote Logo" class="app-logo">
+            <h1>FloraNote 隱私權政策</h1>
+        </div>
         <p class="last-updated">最近更新日期：2026年1月8日</p>
 
         <p>歡迎使用 <strong>FloraNote</strong>（以下簡稱「本 App」）。我們非常重視您的隱私，本政策旨在說明本 App 如何收集、使用及保護您的個人資訊。當您開始使用本 App，即代表您同意本隱私權政策之內容。</p>
