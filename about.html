@@ -31,7 +31,7 @@
         height: auto;
         margin-bottom: 15px;
     }
-        h1 { color: #a56b28; border-bottom: 3px solid #c09768; padding-bottom: 15px; margin: 0; font-size: 1.8em; }
+        h1 { color: #a56b28; border-bottom: 3px solid #c09768; padding-bottom: 15px; margin: 0; }
         h2 { color: #3d9a3d; margin-top: 35px; font-size: 1.4em; border-left: 5px solid #3d9a3d; padding-left: 15px; }
         h3 { color: #63ae63; margin-top: 25px; font-size: 1.2em; }
         p, li { color: #555; }
@@ -46,6 +46,44 @@
 }
         .note-section { margin-top: 40px; margin-bottom: 40px; padding: 20px; background-color: #f1f8f1; border-radius: 8px; font-size: 0.9em; }
         .note-item { margin-bottom: 8px; color: #666; }
+        .last-updated { color: #999; font-size: 0.9em; margin-bottom: 30px; }
+/* 功能對照表專屬樣式 */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 40px 0;
+    font-size: 0.95em;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.comparison-table th {
+    background-color: #3d9a3d;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.comparison-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+.comparison-table tr:nth-child(even) {
+    background-color: #fcfdfc;
+}
+.comparison-table .feature-name {
+    text-align: center;
+    font-weight: bold;
+    color: #444;
+    width: 30%;
+}
+.comparison-table .premium-col {
+    background-color: #f1f8f1;
+    font-weight: bold;
+    color: #2e7d32;
+}
+.check-icon {
+    color: #3d9a3d;
+    font-weight: bold;
+}
         .footer { 
             margin-top: 60px; 
             padding-top: 30px; 
@@ -77,6 +115,7 @@
             <img src="P03-logo01.svg" alt="FloraNote Logo" class="app-logo">
             <h1>FloraNote：您的專業植物調查筆記</h1>
         </div>
+        <p class="last-updated">最近更新日期：2026年1月8日</p>
 
         <div class="intro-text">
             專為環境科學研究者、專業學生、生態調查員及資深植物愛好者設計。</br>
@@ -105,6 +144,54 @@
             <li><strong>體驗版 (Free)：</strong>免費使用核心功能 (RTF 匯出) 與 814 種名錄，可透過觀看廣告，有限度地解鎖專案數量與記錄筆數。</li>
             <li><strong>標準版 (Standard)：</strong>移除所有廣告，專案數量與記錄筆數皆無限制(註1)，獨享完整欄位 RTF 名錄(註2)、GeoJSON、照片壓縮包等匯出功能，專為追求效率的個人專業用戶設計。</li>
         </ul>
+
+<h2 id="feature-compare">FloraNote 功能對照表</h2>
+<table class="comparison-table">
+    <thead>
+        <tr>
+            <th>功能模組</th>
+            <th>體驗版 (Free)</th>
+            <th>專業標準版 (Premium)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="feature-name">廣告體驗</td>
+            <td>包含橫幅與獎勵影片</td>
+            <td class="premium-col">完全無廣告，清爽作業</td>
+        </tr>
+        <tr>
+            <td class="feature-name">專案管理</td>
+            <td>基礎 3 個 (觀看廣告擴增至 5 個)</td>
+            <td class="premium-col">無限制數量</td>
+        </tr>
+        <tr>
+            <td class="feature-name">植物紀錄</td>
+            <td>每專案 15 筆 (觀看廣告擴增至 20 筆)</td>
+            <td class="premium-col">無限制筆數</td>
+        </tr>
+        <tr>
+            <td class="feature-name">RTF 報告欄位</td>
+            <td>基本 9 欄位</td>
+            <td class="premium-col">完整 12 欄位 (含座標)</td>
+        </tr>
+        <tr>
+            <td class="feature-name">GIS 數據匯出</td>
+            <td>✕</td>
+            <td class="premium-col"><span class="check-icon">✔</span> 支援 GeoJSON 格式</td>
+        </tr>
+        <tr>
+            <td class="feature-name">批量照片匯出</td>
+            <td>✕</td>
+            <td class="premium-col"><span class="check-icon">✔</span> 一鍵打包 ZIP 匯出</td>
+        </tr>
+        <tr>
+            <td class="feature-name">常用植物數量</td>
+            <td>10 筆 (觀看廣告擴增至 15 筆)</td>
+            <td class="premium-col">無限制數量</td>
+        </tr>
+    </tbody>
+</table>
 
         <div class="note-section">
             <div class="note-item">(註1) 實際專案或記錄筆數將受裝置本身記憶體與容量限制。</div>
